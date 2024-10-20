@@ -87,7 +87,7 @@ export default function RootLayout({
               stroke="purple"
               strokeWidth="10"
               fill="transparent"
-              className="transform -rotate-90 origin-center"
+              className="transform -rotate-90 origin-center z-50"
             />
           </motion.svg>
         </motion.div>

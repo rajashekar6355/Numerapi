@@ -5,8 +5,12 @@ import Image from "next/image";
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { IconBrandYoutubeFilled } from "@tabler/icons-react";
-import Link from "next/link";
+import highperformanceimg from "@/assets/features/Highperformanceimg.webp"
+import aivmenv from "@/assets/features/aivmenv.jpeg"
+import ide1img from "@/assets/features/ide1img.jpg"
+import ide2img from "@/assets/features/ide2img.jpeg"
+import ide3img from "@/assets/features/ide3img.jpg"
+
 
 export function Features() {
   const features = [
@@ -111,11 +115,10 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="/linear.webp"
-            alt="header"
+            src={highperformanceimg}
+            alt="highperformanceimg"
             width={800}
-            height={800}
-            className="h-full w-full aspect-square object-cover object-left-top rounded-sm"
+            className="w-full aspect-auto object-fit object-left-top rounded-sm"
           />
         </div>
       </div>
@@ -128,36 +131,25 @@ export const SkeletonOne = () => {
 
 export const SkeletonThree = () => {
   return (
-    <Link
-      href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
-      target="__blank"
-      className="relative flex gap-10  h-full group/image"
-    >
+    
       <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
+        <div className="flex flex-1 w-full h-full flex-col space-y-2 mt-4 relative">
           {/* TODO */}
-          <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
+          
           <Image
-            src="https://assets.aceternity.com/fireship.jpg"
-            alt="header"
-            width={800}
-            height={800}
-            className="h-full w-full aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
+            src={aivmenv}
+            alt="aivmenv"
+            width={800} 
+            className="w-full aspect-auto object-fit "
           />
         </div>
       </div>
-    </Link>
+  
   );
 };
 
 export const SkeletonTwo = () => {
-  const images = [
-    "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  ];
+  const images = [ide1img,ide2img,ide3img];
 
   const imageVariants = {
     whileHover: {

@@ -2,8 +2,7 @@
 const nextConfig = {
   images: {
     domains: [
-      'images.unsplash.com',  // Existing domain
-      'assets.aceternity.com' // New domain added here
+      'images.app.goo.gl',
     ],
   },
   webpack(config) {
