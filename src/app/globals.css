@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 3.9%; /* Very dark gray */
+    --border: 0 0% 89.8%;    /* Light gray border */
+    --card: 0 0% 100%;       /* White */
+    --card-foreground: 0 0% 3.9%; /* Very dark gray */
+    --popover: 0 0% 100%;    /* White */
+    --popover-foreground: 0 0% 3.9%; /* Very dark gray */
+    --primary: 0 0% 9%;      /* Dark primary */
+    --primary-foreground: 0 0% 98%; /* Very light primary */
+    --secondary: 0 0% 96.1%; /* Light secondary */
+    --secondary-foreground: 0 0% 9%; /* Dark secondary */
+    --muted: 0 0% 96.1%;     /* Muted color */
+    --muted-foreground: 0 0% 45.1%; /* Muted foreground */
+    --accent: 0 0% 96.1%;    /* Accent color */
+    --accent-foreground: 0 0% 9%;  /* Dark accent foreground */
+    --destructive: 0 84.2% 60.2%;  /* Destructive color (red) */
+    --destructive-foreground: 0 0% 98%; /* Light destructive foreground */
+    --ring: 0 0% 3.9%;       /* Dark ring */
+    --chart-1: 12 76% 61%;   /* Custom chart colors */
+    --chart-2: 173 58% 39%;  /* Custom chart colors */
+    --radius: 0.5rem;        /* Border radius */
+  }
+
+  .dark {
+    --background: 0 0% 3.9%; /* Dark background */
+    --foreground: 0 0% 98%;  /* Light foreground */
+    --border: 0 0% 14.9%;    /* Dark border */
+    /* Define other dark mode colors */
+  }
+
+  /* Apply border color using custom variable */
+  * {
+    border-color: hsl(var(--border)); /* Using custom border color */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground; /* Apply background and text color */
+  }
+}
