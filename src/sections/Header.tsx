@@ -47,7 +47,7 @@ export const Header = () => {
                 className="text-white/70 hover:text-white transition"
                 aria-label=" What You get"
               >
-                What You get
+                What You get?
               </a>
               <a
                 href="#OurTeam"

@@ -4,6 +4,7 @@ import { Hero } from "@/sections/Hero";
 import { Features } from "@/sections/Features";
 import { LanchingSoonBadge } from "@/sections/LanchingSoonBadge";
 import { Suspense, lazy } from "react";
+import VideoPlayer from "@/sections/VideoSection";
 import JoinWaitlistForm from "@/sections/JoinWaitlist";
 import AryuemaanImage from "@/assets/teamimages/Aryuemaan.jpeg"; // Import your first image
 import rajashekar from "@/assets/teamimages/Rajashekar.jpeg"; // Import your first image
@@ -33,7 +34,8 @@ export default function Home() {
         <LanchingSoonBadge text={"We are launching soon"} />
         <Hero />
       </div>
-
+      
+      <VideoPlayer />
       <Features />
 
       {/* Load OurServices first */}

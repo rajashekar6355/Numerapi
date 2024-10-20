@@ -7,7 +7,9 @@ import { Inter } from "next/font/google";
 import { useTransform } from "framer-motion";
 import starsBg from "@/assets/stars.png";
 import { ConvexClientProvider } from "./ConvexClientProvider";
+import Head from 'next/head'; // Import the Head component
 import "./globals.css";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -52,6 +54,11 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <title>Numerapi</title> {/* Set the title of the page */}
+        <meta name="description" content="Unlock seamless development with NumerAPI: connect GitHub, run AI-driven code analysis, optimize, and deploy—all in a high-performance cloud environment." />
+        <link rel="icon" href="/favicon.ico" /> 
+      </Head>
       <body
         className={twMerge(inter.className, "bg-black text-white antialiased")}
       >
@@ -72,7 +79,7 @@ export default function RootLayout({
           }}
         >
 
-<ConvexClientProvider>{children}</ConvexClientProvider>
+          <ConvexClientProvider>{children}</ConvexClientProvider>
 
           {/* Example SVG progress wheel */}
           <motion.svg

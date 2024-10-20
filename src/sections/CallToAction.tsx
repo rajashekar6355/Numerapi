@@ -116,9 +116,9 @@ export const CallToAction = () => {
             <Suspense fallback={<div className="loader">Loading...</div>}>
               {isSplineLoaded && Spline && (
                 <Spline
-                scene="https://prod.spline.design/sC2EdZodA6tnZ53j/scene.splinecode" 
-                className="min-h-fit absolute z-10"
-              />
+                  scene="https://prod.spline.design/sC2EdZodA6tnZ53j/scene.splinecode"
+                  className="min-h-fit absolute z-10"
+                />
               )}
             </Suspense>
           </div>
@@ -130,7 +130,7 @@ export const CallToAction = () => {
             NumeraPi
           </div>
 
-          <div className="relative"> 
+          <div className="relative">
             <h2 className="text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text-center font-medium">
               NumerAPI is for everyone?
             </h2>
@@ -138,9 +138,11 @@ export const CallToAction = () => {
               Join NumerAPI today to supercharge your productivity with seamless
               GitHub integration and AI-driven features!
             </p>
-            <div className="flex justify-center mt-8">
-              <Button>Join Waitlist</Button>
-            </div>
+            <a href="#JoinWaitlistform">
+              <div className="flex justify-center mt-8">
+                <Button>Join Waitlist</Button>
+              </div>
+            </a>
           </div>
         </motion.div>
       </div>
