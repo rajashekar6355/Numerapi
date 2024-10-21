@@ -24,7 +24,6 @@ const VideoPlayer: React.FC = () => {
             ref={videoRef} // Attach the ref to the video element
             className="w-full h-full"
             muted
-            loop
             playsInline
             controls // Ensures the video plays inline without fullscreen on mobile devices
           >

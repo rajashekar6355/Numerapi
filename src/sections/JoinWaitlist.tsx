@@ -34,8 +34,11 @@ const JoinWaitlistForm = () => {
   };
 
   return (
-    <div id="JoinWaitlistform" className="max-w-md mx-auto  mb-8 rounded-md shadow-md bg-black">
-      <h2 className="text-2xl font-bold mb-4 text-center text-white">Join Our Waitlist</h2>
+    <div
+      id="JoinWaitlistform"
+      className="max-w-md mx-auto mb-8 rounded-md shadow-md relative z-20 pt-1" // Ensure high z-index
+    >
+      <h2 className="text-2xl font-bold mb-4 text-center text-white">Join Waitlist</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block mb-2 text-center text-white" htmlFor="name">
